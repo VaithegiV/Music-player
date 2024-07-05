@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concert-page</title>
+  <link rel="stylesheet" href="concert.css">
+  <script src="https://kit.fontawesome.com/82ee2dc8a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="music-player">
+      <nav>
+        <div class="circle">
+          <a href="../tamil/tamil.html"> <i class="fa-solid fa-angle-left"></i> </a>
+        </div>
+        <div class="circle">
+          <a href="../english/english.html"> <i class="fa-solid fa-angle-right"></i> </a>
+          </div>
+      </nav>
+      <div>
+        <img src="../media/OIP (3).jpg">
+        <div class="title">
+          Concert Vibe Songs
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song1">
+              <source src="../media/Beyoncé___Bruno_Mars_Crash_the_Pepsi_Super_Bowl_50_Halftime_Show___NFL(256k).mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song1', 'ctrlIcon1')"> <i class="fa-solid fa-play" id="ctrlIcon1"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">Pepsi Superbowl</div>
+            <div class="artistname">Beyoncé & Burno Mars</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn1')" class="favorite" id="hrtbtn1"></div>
+
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song2">
+              <source src="../media/Coldplay_-_A_Sky_Full_Of_Stars__Live_at_River_Plate_(256k).mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song2', 'ctrlIcon2')"> <i class="fa-solid fa-play" id="ctrlIcon2"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">A Sky Full of Stars</div>
+            <div class="artistname">Cold Play</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn2')" class="favorite" id="hrtbtn2"></div>
+
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song3">
+              <source src="../media/Craziest_Crowd_Control_Ever!__Best_Dj_Drop_2018_!!😱(256k).mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song3', 'ctrlIcon3')"> <i class="fa-solid fa-play" id="ctrlIcon3"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">Hype Thw Crowd</div>
+            <div class="artistname">Dj Remix</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn3')" class="favorite" id="hrtbtn3"></div>
+
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song4">
+              <source src="../media/Roddy_Ricch_-_The_Box__Wireless_Festival_2022_(256k).mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song4', 'ctrlIcon4')"> <i class="fa-solid fa-play" id="ctrlIcon4"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">The Box</div>
+            <div class="artistname">Roddy Ricch</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn4')" class="favorite" id="hrtbtn4"></div>
+
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song5">
+              <source src="../media/Leo_-_Badass_Anirudh_Hukum_Concert_London_the_o2_arena(256k).mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song5', 'ctrlIcon5')"> <i class="fa-solid fa-play" id="ctrlIcon5"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">Badass Hukum Concert</div>
+            <div class="artistname">Anirudh Ravichandran</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn5')" class="favorite" id="hrtbtn5"></div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="concert.js"></script>
+</body>
+</html>

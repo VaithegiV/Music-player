@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tamil-page</title>
+  <link rel="stylesheet" href="./tamil.css">
+  <script src="https://kit.fontawesome.com/82ee2dc8a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="music-player">
+      <nav>
+        <div class="circle">
+          <a href="../pop/pop.html"> <i class="fa-solid fa-angle-left"></i> </a>
+        </div>
+        <div class="circle">
+          <a href="../concert/concert.html"> <i class="fa-solid fa-angle-right"></i> </a>
+          </div>
+      </nav>
+      <div>
+        <img src="../media/OIP (2).jpg">
+        <div class="title">
+          Tamil Hits
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song1">
+              <source src="../media/Nenjin Ezhuth.mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song1', 'ctrlIcon1')"> <i class="fa-solid fa-play" id="ctrlIcon1"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">Nenjin Ezhuth</div>
+            <div class="artistname">artist name</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn1')" class="favorite" id="hrtbtn1"></div>
+
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song2">
+              <source src="../media/Raja Raja Cholan-(DJMaza).mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song2', 'ctrlIcon2')"> <i class="fa-solid fa-play" id="ctrlIcon2"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">Raja Raja Cholan</div>
+            <div class="artistname">Artist Name</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn2')" class="favorite" id="hrtbtn2">
+           <div></div>
+          </div>
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song3">
+              <source src="../media/Gala Gala.mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song3', 'ctrlIcon3')"> <i class="fa-solid fa-play" id="ctrlIcon3"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">Gala Gala</div>
+            <div class="artistname">Harris JayaRaj</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn3')" class="favorite" id="hrtbtn3">
+           <div></div>
+          </div>
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song4">
+              <source src="../media/Maamadura.mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song4', 'ctrlIcon4')"> <i class="fa-solid fa-play" id="ctrlIcon4"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">Maamadura</div>
+            <div class="artistname">Santhosh Narayanan</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn4')" class="favorite" id="hrtbtn4">
+           <div></div>
+          </div>
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song5">
+              <source src="../media/Uyire Un Uyirena.mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song5', 'ctrlIcon5')"> <i class="fa-solid fa-play" id="ctrlIcon5"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">Uyire Un Uyirena</div>
+            <div class="artistname">Artist Name</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn5')" class="favorite" id="hrtbtn5">
+           <div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<script src="tamil.js"></script>
+</body>
+
+</html>

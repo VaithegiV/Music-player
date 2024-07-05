@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pop-page</title>
+  <link rel="stylesheet" href="pop.css">
+  <script src="https://kit.fontawesome.com/82ee2dc8a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="music-player">
+      <nav>
+        <div class="circle">
+          <a href="../home/home.html"> <i class="fa-solid fa-angle-left"></i> </a>
+        </div>
+        <div class="circle">
+          <a href="../tamil/tamil.html"> <i class="fa-solid fa-angle-right"></i> </a>
+          </div>
+      </nav>
+      <div>
+        <img src="../media/OIP (1).jpg">
+        <div class="title">
+          Pop Songs
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song1">
+              <source src="../media/XG_-_WOKE_UP__Official_Music_Video_(256k).mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song1', 'ctrlIcon1')"> <i class="fa-solid fa-play" id="ctrlIcon1"></i> </div> 
+            </div>
+          </div>
+          <a href="../songplay/playsong.html">
+          <div class="middle">
+            <!-- Wrap song name in anchor tag with href -->
+            <div class="songname"> Woke Up </div>
+            <div class="artistname">XG</div>
+          </div> </a>
+          <div onclick="addToFavourtite('hrtbtn1')" class="favorite" id="hrtbtn1"></div>
+
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song2">
+              <source src="../media/The_Weeknd_-_Starboy__Live_From_The_Victoria’s_Secret_Fashion_Show_2016_in_Paris_(256k).mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song2', 'ctrlIcon2')"> <i class="fa-solid fa-play" id="ctrlIcon2"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">Star Boy</div>
+            <div class="artistname">Weeknd</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn2')" class="favorite" id="hrtbtn2"></div>
+
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song3">
+              <source src="../media/Mark_Ronson_-_Uptown_Funk__Official_Video__ft._Bruno_Mars(256k).mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song3', 'ctrlIcon3')"> <i class="fa-solid fa-play" id="ctrlIcon3"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">Uptown Funk</div>
+            <div class="artistname">Mark Ronso(ft.Burno Mars)</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn3')" class="favorite" id="hrtbtn3"></div>
+
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song4">
+              <source src="../media/Sabrina_Carpenter_-_Espresso__Official_Audio_(256k).mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song4', 'ctrlIcon4')"> <i class="fa-solid fa-play" id="ctrlIcon4"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">Espresso</div>
+            <div class="artistname">Sabrina Carpenter</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn4')" class="favorite" id="hrtbtn4"></div>
+
+        </div>
+        <div class="song-queue">
+          <div class="audio">
+            <audio id="song5">
+              <source src="../media/BLACKPINK_-_‘뚜두뚜두__DDU-DU_DDU-DU_’_M_V(256k).mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <div onclick="playPause('song5', 'ctrlIcon5')"> <i class="fa-solid fa-play" id="ctrlIcon5"></i> </div> 
+            </div>
+          </div>
+          <div class="middle">
+            <div class="songname">DDU-DU-DDU-DU</div>
+            <div class="artistname">Black Pink</div>
+          </div>
+          <div onclick="addToFavourtite('hrtbtn5')" class="favorite" id="hrtbtn5"></div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="pop.js"></script>
+</body>
+</html>
